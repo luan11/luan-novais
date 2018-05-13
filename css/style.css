@@ -1,5 +1,119 @@
 /* reset */
+
 *{
 	margin: 0;
 	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
+
+nav,ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+/* end reset */
+
+/* header */
+
+header{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* social medias */
+
+.social-medias{
+	list-style: none;
+	background: #2f473c;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.social-medias li{
+	margin: 2px 2px;
+	padding: 1px 5px 1px 5px;
+	background-color: #54bf72;
+	border-radius: 100%;
+}
+
+.social-medias li:hover{
+	background-color: #e9ffee; 
+}
+
+.social-medias li a{
+	color: #e9ffee;
+	font-size: 1.3rem;
+}
+
+.social-medias li a:hover{
+	color: #54bf72;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+	.social-medias{
+		justify-content: center;
+	}
+}
+
+/* end social medias */
+
+/* start nav */
+
+.nav{
+	background: linear-gradient(to right,#fff,#e9ffee,#fff);
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+}
+
+.nav-logo{
+	background: url(../assets/images/navlogo-luan.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 180px;
+	height: 80px;
+	font-size: 0;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.nav-logo:hover{
+	background: url(../assets/images/navlogo-luan-hover.png);
+}
+
+.nav nav{display: flex;}
+.nav li a{color: #22875b;}
+.nav li a:hover{font-weight: 600;}
+.nav li{margin: 0 15px;}
+.nav li:first-child{margin-left: 0;}
+.nav li:last-child{margin-right: 0;}
+@media (max-width: 768px){
+	.nav{flex-direction: column;}
+}
+
+/* end nav */
+
+/* end header */
