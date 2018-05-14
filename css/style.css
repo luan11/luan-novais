@@ -224,8 +224,131 @@ header{
 }
 /*end banner */
 
+/* start projects */
+#projects{
+	background-image: url(../assets/images/banner-bg.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.section-title{
+	background-color: #22875b;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	border-top: 3px solid #e9ffee;
+}
+
+.section-title h1{
+	color: #e9ffee;
+	font-size: 2.5rem;
+	text-transform: lowercase;
+}
+
+.section-title h4{
+	color: #e9ffee;
+	font-size: 2rem;
+}
+
+div .container-slide{
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #154f36;
+	padding: 5%;
+	border-radius: 6px;
+	margin-top: 15px;
+}
+
+.container-slide h1{
+	background-color: #e9ffee;
+	color: #22875b;
+	font-size: 2rem;
+	padding: 0 10px 0 10px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 8px;
+	margin: 20px;
+}
+
+.container-slide h2{
+	background-color: #e9ffee;
+	color: #22875b;
+	font-size: 2rem;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.container-slide a{
+	color: #22875b;
+}
+
+.container-slide h3{
+	color: #e9ffee;
+	font-size: 1rem;
+	padding: 5px;
+	text-transform: lowercase;
+	font-style: italic;
+	text-align: center;
+	margin: 5px;
+	font-weight: 400;
+}
+
+.slide-img{
+	display: flex;
+	align-items: stretch;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 100%;
+}
+
+.slider-projects .slick-arrow{
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+	z-index: 999;
+}
+
+.slider-projects .slick-next{
+	right: 40px;
+}
+
+.slider-projects .slick-next::before{
+	content: "";
+	background-image: url('../assets/images/next-icon.png');
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+
+.slider-projects .slick-prev{
+	left: -10px;
+}
+
+.slider-projects .slick-prev::before{
+	content: "";
+	background-image: url('../assets/images/prev-icon.png');
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+
+/* end projects */
+
 /* media screens */
 @media (max-width: 768px){
+	.banner{padding-bottom: 5%;}
 	.social-medias{justify-content: center;}
 	.nav{flex-direction: column; border-bottom: 3px solid #22875b; padding: 0;}
 	.nav nav{flex-direction: column; background-color: #22875b; width: 100%;}
@@ -237,5 +360,6 @@ header{
 	.btn-openMenu{display: block;}
 	.nav .mobile-d-none{display: none;}
 	.mobile-d-block{display: block;}
+	.slide-img{width:100%;height: 100%;}
 }
 
