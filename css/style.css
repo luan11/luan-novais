@@ -29,6 +29,7 @@ header{
 	width: 100%;
 	top: 0;
 	left: 0;
+	text-align: center;
 }
 
 .position-sticky{
@@ -119,8 +120,6 @@ header{
 
 .banner h1{
 	font-size: 3.2rem;
-	text-transform: uppercase;
-	margin-bottom: 15px;
 }
 
 .banner h2{
@@ -148,6 +147,12 @@ header{
 	opacity: .3;
 }
 
+.banner h4{
+	font-size: 1.1rem;
+	text-transform: lowercase;
+	margin-bottom: 15px;
+}
+
 .banner .img{
 	background-image: url(../assets/images/avatar.jpg);
 	background-repeat: no-repeat;
@@ -166,21 +171,47 @@ header{
 	border-color: #b4f3c3;
 }
 
-.banner p{
+.banner .texto{
 	margin-bottom: 10px;
-	padding: 2% 15% 2% 15%;
+	padding: 0 15% 0 15%;
 	font-style: italic;
 	font-size: 1.1rem;
 	background-color: rgba(0,0,0,.3);
+}
+
+.banner .texto::before{
+	content: '';
+	display: block;
+	position: relative;
+    background-image: url(../assets/images/aspas1.png);
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 85px;
+    opacity: .2;
+}
+
+.banner .texto::after{
+	content: '';
+	display: block;
+	position: relative;
+	float: right;
+    background-image: url(../assets/images/aspas2.png);
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 85px;
+    opacity: .2;
 }
 /*end banner */
 
 /* media screens */
 @media (max-width: 768px){
 	.social-medias{justify-content: center;}
-	.nav{flex-direction: column;}
+	.nav{flex-direction: column; border-bottom: 2px solid #3fbc61;}
+	.nav-logo{margin-bottom: 10px;}
+	.nav nav{flex-direction: column;}
+	.nav nav li{margin:0;}
 	.banner h3::before{font-size: 2rem;}
 	.banner h3::after{font-size: 2rem;}
-	.banner h3{font-size: 1rem;}
+	.banner h3{font-size: 1.5rem; padding: 2px;}
 }
 
