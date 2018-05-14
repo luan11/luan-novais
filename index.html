@@ -22,12 +22,14 @@
 		</div>
 		<div class="nav">
 			<a class="nav-logo" href="index.html">luan novais | PORTFÓLIO</a>
-			<nav>
+			<button class="btn-openMenu"><i class="fas fa-bars"></i></button>
+			<nav id="navPrincipal" class="mobile-d-none">
 				<li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
 				<li><a href="#about"><i class="fas fa-info-circle"></i> Sobre</a></li>
 				<li><a href="#"><i class="fas fa-file-code"></i> Projetos</a></li>
 				<li><a href="#"><i class="fas fa-hands-helping"></i> Contato</a></li>
 			</nav>
+			<button class="btn-closeMenu"><i class="fas fa-times"></i></button>
 		</div>
 	</header>
 	<!-- end header -->
@@ -43,7 +45,9 @@
 	</section>
 	<!-- end banner about -->
 
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/typed.min.js"></script>
 	<script src="js/typedsTexts.js"></script>
+	<script src="js/openMenuMobile.js"></script>
 </body>
 </html>

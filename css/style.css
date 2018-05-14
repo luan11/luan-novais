@@ -30,6 +30,7 @@ header{
 	top: 0;
 	left: 0;
 	text-align: center;
+	z-index: 999;
 }
 
 .position-sticky{
@@ -102,6 +103,26 @@ header{
 .nav li{margin: 0 15px;}
 .nav li:first-child{margin-left: 0;}
 .nav li:last-child{margin-right: 0;}
+
+.btn-openMenu{
+	font-size: 1.8rem;
+	background-color: #22875b;
+	color: #e9ffee;
+	padding: 0 7px 0 7px;
+	border: none;
+	display: none;
+	cursor: pointer;
+}
+
+.btn-closeMenu{
+	font-size: 1.8rem;
+	background-color: #22875b;
+	color: #e9ffee;
+	padding: 0 11px 0 11px;
+	border: none;
+	display: none;
+	cursor: pointer;
+}
 /* end nav */
 /* end header */
 
@@ -161,7 +182,7 @@ header{
 	height: 215px;
 	padding: 112.5px;
 	border-radius: 100%;
-	border: 6px #3fbc61 solid;
+	border: 6px #22875b solid;
 	cursor: pointer;
 	transition: .3s;
 }
@@ -206,12 +227,15 @@ header{
 /* media screens */
 @media (max-width: 768px){
 	.social-medias{justify-content: center;}
-	.nav{flex-direction: column; border-bottom: 2px solid #3fbc61;}
-	.nav-logo{margin-bottom: 10px;}
-	.nav nav{flex-direction: column;}
-	.nav nav li{margin:0;}
+	.nav{flex-direction: column; border-bottom: 3px solid #22875b; padding: 0;}
+	.nav nav{flex-direction: column; background-color: #22875b; width: 100%;}
+	.nav nav li{margin:0; padding: 5px;}
+	.nav nav li a{color:#e9ffee;}
 	.banner h3::before{font-size: 2rem;}
 	.banner h3::after{font-size: 2rem;}
 	.banner h3{font-size: 1.5rem; padding: 2px;}
+	.btn-openMenu{display: block;}
+	.nav .mobile-d-none{display: none;}
+	.mobile-d-block{display: block;}
 }
 
