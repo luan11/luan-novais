@@ -1,3 +1,11 @@
+/* 
+Theme Name: Luan Novais - Portfólio
+Author: Luan Novais dos Santos
+Author URI: https://github.com/luan11/portfolio 
+Description: Luan Novais - Portfólio 
+Version: 1.0
+*/
+
 /* reset */
 *{
 	margin: 0;
@@ -35,6 +43,7 @@ header{
 
 .position-sticky{
 	position: sticky;
+	z-index: 9999;
 }
 
 /* social medias */
