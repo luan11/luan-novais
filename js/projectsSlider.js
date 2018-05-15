@@ -2,7 +2,6 @@ $('.slider-projects').slick({
   centerMode: true,
   centerPadding: '50px',
   arrows: true,
-  dots: true,
   slidesToShow: 3,
   responsive: [
     {
